@@ -1,0 +1,155 @@
+listarOrden As screen:
+    BackgroundImage: ='54342'
+
+    DataTable3 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: =orden
+        Width: =1357
+        X: =7
+        Y: =203
+        ZIndex: =1
+
+        producto_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="producto"
+            FieldName: ="producto"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.producto.Value
+            Width: =100
+            X: =693
+            Y: =0
+            ZIndex: =2
+
+        "'producto:ID_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="producto:ID"
+            FieldName: ="producto_x003a_ID"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: |-
+                =ThisItem.'producto:ID'.Value
+            Width: =100
+            X: =292
+            Y: =0
+            ZIndex: =3
+
+        numeroOrden_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="numeroOrden"
+            FieldName: ="numeroOrden"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.numeroOrden
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        usuarioSolicitante_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="usuarioSolicitante"
+            FieldName: ="usuarioSolicitante"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.usuarioSolicitante
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        usuarioAprobado_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="usuarioAprobado"
+            FieldName: ="usuarioAprobado"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.usuarioAprobado
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        cantidadSolicitada_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="cantidadSolicitada"
+            FieldName: ="cantidadSolicitada"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.cantidadSolicitada
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        cantidadAprobada_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="cantidadAprobada"
+            FieldName: ="cantidadAprobada"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.cantidadAprobada
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        anexoOrden_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="anexoOrden"
+            FieldName: ="anexoOrden"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.anexoOrden
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+            Button8_1 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                OnSelect: =Navigate(vistaPrincipal,ScreenTransition.Fade)
+                Text: ="CERRAR"
+                X: =1180
+                Y: =711
+                ZIndex: =1
+
+    Label3_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        Size: =20
+        Text: ="LISTA DE ORDENES"
+        Width: =262
+        X: =554
+        Y: =119
+        ZIndex: =2
+
+    Button8_2 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        OnSelect: =Navigate(vistaPrincipal,ScreenTransition.Fade)
+        Text: ="CERRAR"
+        X: =1180
+        Y: =711
+        ZIndex: =3
+

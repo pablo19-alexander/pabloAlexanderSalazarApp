@@ -1,0 +1,54 @@
+vistaPrincipal As screen:
+    BackgroundImage: ='54342'
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =69
+        Size: =30
+        Text: ="MENU PRINCIPAL"
+        Width: =357
+        X: =500
+        Y: =136
+        ZIndex: =1
+
+    Button1 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =58
+        OnSelect: =Navigate(listarOrden,ScreenTransition.Fade)
+        Text: ="LISTAR ORDEN"
+        Width: =202
+        X: =857
+        Y: =508
+        ZIndex: =2
+
+    Button2 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =58
+        OnSelect: =Navigate(registrarOrden,ScreenTransition.Fade)
+        Text: ="REGISTRAR ORDEN"
+        Width: =202
+        X: =857
+        Y: =318
+        ZIndex: =3
+
+    Button3 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =58
+        OnSelect: =Navigate(listarProducto,ScreenTransition.Fade)
+        Text: ="LISTAR PRODUCTOS"
+        Width: =248
+        X: =252
+        Y: =508
+        ZIndex: =4
+
+    Button4 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =58
+        OnSelect: =Navigate(registrarProducto,ScreenTransition.Fade)
+        Text: ="REGISTRAR PRODUCTOS"
+        Width: =247
+        X: =252
+        Y: =318
+        ZIndex: =5
+

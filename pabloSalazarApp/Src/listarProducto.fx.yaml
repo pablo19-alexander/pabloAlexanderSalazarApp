@@ -1,0 +1,76 @@
+listarProducto As screen:
+    BackgroundImage: ='54342'
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Items: =registro
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =154
+        Width: =846
+        X: =279
+        Y: =176
+        ZIndex: =1
+
+        Image1 As image:
+            Height: =128
+            Image: =ThisItem.imagenProducto
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1.Width - 104
+            X: =167
+            Y: =47
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.nombreProducto
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =155
+            Y: =87
+            ZIndex: =3
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    Label3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        Size: =20
+        Text: ="LISTA DE PRODUCTOS"
+        Width: =339
+        X: =296
+        Y: =121
+        ZIndex: =2
+
+    Button8 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        OnSelect: =Navigate(vistaPrincipal,ScreenTransition.Fade)
+        Text: ="CERRAR"
+        X: =1180
+        Y: =711
+        ZIndex: =3
+
